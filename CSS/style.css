@@ -1,0 +1,194 @@
+/*
+Author: Brock Hogue
+Date: 3-14-2023
+File name: style.class*/
+/* CSS Reset */
+body, header, nav, main, footer, h1, div, img, ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style Rules for body and images */
+body {
+    background-color: darkorange; 
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Style rules for mobile viewport */
+/* Style rule for header */
+header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    height: 80px;
+}
+
+header img {
+    margin: 0 auto;
+}
+
+/* Style rules for navigation area */
+nav {
+    padding: 1%;
+    margin-bottom: 1%;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav li {
+    font-size: 1.5em;
+    border-top: 1px solid #fff;
+}
+
+nav li a {
+    display: block;
+    color: #fff;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+
+nav li:first-child {
+    border-top: none;
+}
+
+.mobile {
+    display: block;
+}
+
+.tablet-desktop {
+    display: block;
+}
+
+main {
+    background-color: #fff;
+    padding: 1%;
+    font-size: 1.05em;
+}
+
+footer p {
+    font-size: 1.00em;
+    text-align: center;
+    color: #fff;
+    padding: 0 1em;
+}
+
+footer p a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#about me, #family, #college {
+            margin: 0 2%;
+        }
+
+#contact {
+    text-align: center;
+}
+
+/* Tablet Viewport: Style rule for header */
+    header {
+        padding-bottom: 2%;
+        position: static;
+    }
+
+    /* Tablet Viewport: style rules for nav area */
+    nav li {
+        border-top: none;
+        display: inline-block;
+        border-right: 1px solid #fff;
+    }
+
+    nav li:last-child {
+        border-right: none;
+    }
+
+    nav li a {
+        padding: 0.1em 0.75em;
+    }
+
+    /* Tablet Viewport: Style rules for main content area */
+    main ul {
+        margin: 0 0 4% 10%;
+    }
+
+/* Media Query for Desktop Viewport */
+    @media screen and (min-width: 1015px), print {
+        
+        /* Desktop Viewport: Style rule for header */
+        header {
+            width: 25%;
+            float: left;
+            padding-bottom: 0;
+        }
+        
+        /* Desktop Viewport: Style rules for nav area */
+        nav {
+            float: right;
+            width: 70%;
+            margin: 4em 1em 0 0;
+        }
+        
+        nav ul {
+            text-align: center;
+        }
+        
+        nav li {
+            border: none;
+        }
+        
+        nav li a {
+            padding: 0.5em 1em;
+        }
+        
+        nav li a:hover {
+            color: #000;
+            background-color: #fff;
+        }
+        
+        /* Desktop Viewport: Style Rules for main content */
+        main {
+            clear: none;
+        }
+        
+        main h1 {
+            font-size: 1.8em;
+        }
+        
+        #teaching philosophy, #experience {
+            width: 29%;
+            float: left;
+            margin: 0 2%;
+        }
+        
+        #about me, #family, #college {
+            width: 29%;
+            float: left;
+            margin: 0 2%;
+        }
+        
+/* Media Query for Large Desktop Viewports */
+        @media screen and (min-width: 1920px) {
+            
+            #container {
+                width: 1920px;
+                margin: 0 auto;
+            }
+            
+            body {
+                background-color: #fff;
+                color: #000;
+            }
+            
+}
+        
+}
+
